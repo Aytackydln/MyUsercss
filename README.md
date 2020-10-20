@@ -11,4 +11,4 @@ Install Stylus then install [Compact youtube](https://aytackydln.github.io/MyUse
 Hides reddit ads
 
 ## Installation
-Install Stylus then install [Reddit Ad Hider](https://aytackydln.github.io/MyUsercss/youtube.user.css)
+Install Stylus then install [Reddit Ad Hider](https://aytackydln.github.io/MyUsercss/reddit.user.css)
