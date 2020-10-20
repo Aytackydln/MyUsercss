@@ -3,9 +3,9 @@
 @namespace      github.com/openstyles/stylus
 @version        1.0.0
 @description    Youtube Compact
-@author         AytacKydln
+@author         AytacKydln@github
 @homepageURL    https://github.com/Aytackydln/MyUsercss
-/* @updateURL		https://xxx */
+@updateURL		https://aytackydln.github.io/MyUsercss/youtube.user.css
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
     :root {
