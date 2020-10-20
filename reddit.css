@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name           Reddit adblock
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Disables reddit ads
+@author         Aytackydln
+@homepageURL    https://github.com/Aytackydln/MyUsercss
+@updateURL      http://medias/usercss/redddit.user.css
+==/UserStyle== */
+@-moz-document domain("reddit.com") {
+    .promoted {
+        visibility: hidden;
+    }
+}
