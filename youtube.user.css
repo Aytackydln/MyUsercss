@@ -59,11 +59,8 @@
     #primary {
         max-width: none!important;
     }
-    /*
-.ytp-chapter-hover-container {
-    width: 100%!important;
-}*/
-    #player-container {
+	
+    #player-container, #player-container-inner, #player-container-outer {
         max-height: calc(100vh - var(--ytd-watch-flexy-masthead-height));
     }
 
