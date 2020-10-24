@@ -1,13 +1,13 @@
 /* ==UserStyle==
 @name           Twitch Compact
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        1.0.1
 @description    Twitch Compact
 @author         AytacKydln@github
 @homepageURL    https://github.com/Aytackydln/MyUsercss
 @updateURL		https://aytackydln.github.io/MyUsercss/twitch.user.css
 ==/UserStyle== */
-@-moz-document domain("example.com") {
+@-moz-document domain("twitch.tv") {
     .chat-line__message,
     .vod-message {
         padding: .5rem 0;
