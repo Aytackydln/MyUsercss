@@ -1,0 +1,47 @@
+/* ==UserStyle==
+@name           Twitch Compact
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Twitch Compact
+@author         AytacKydln@github
+@homepageURL    https://github.com/Aytackydln/MyUsercss
+@updateURL		https://aytackydln.github.io/MyUsercss/twitch.user.css
+==/UserStyle== */
+@-moz-document domain("example.com") {
+    .chat-line__message,
+    .vod-message {
+        padding: .5rem 0;
+        border: 0;
+        width: 100%;
+    }
+    .tw-root--theme-dark .tw-border-l {
+        border-left: 0px!important;
+    }
+    .channel-root__right-column {
+        width: 29.5rem!important;
+    }
+    .persistent-player--theatre {
+        width: calc(100% - 30rem + 10px) !important;
+    }
+    .right-column {
+        width: 29.5rem!important;
+    }
+    .tw-pd-x-1 {
+        padding: 0!important;
+    }
+    .vod-message__header {
+        display: none!important;
+    }
+    .tw-c-text-alt-2 > tw-mg-x-05 {
+        display: block!important;
+    }
+    .channel-points-reward-line {
+        padding: 0;
+    }
+    .chat-shell__expanded {
+        min-width: 30rem;
+    }
+    .chat-line__message-container {
+        width: 100%!important;
+    }
+}
