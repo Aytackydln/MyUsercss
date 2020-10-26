@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch Compact
 @namespace      github.com/openstyles/stylus
-@version        1.0.1
+@version        1.0.2
 @description    Twitch Compact
 @author         AytacKydln@github
 @homepageURL    https://github.com/Aytackydln/MyUsercss
@@ -17,15 +17,30 @@
     .tw-root--theme-dark .tw-border-l {
         border-left: 0px!important;
     }
-    .channel-root__right-column {
+    
+    /* non-theatre */
+    .channel-root__right-column { /* .right-column--theatre */
         width: 29.5rem!important;
     }
+    .persistent-player {
+        max-width: calc(100% - 30rem + 10px) !important;
+    }
+    .right-column.tw-relative .channel-root__right-column {
+        transform: translateX(-30rem) translateZ(0px)!important;
+    }
+    .channel-root__info.channel-root__info--with-chat{
+        margin-top: 784px!important;
+    }
+    
+    /* theatre */
     .persistent-player--theatre {
         width: calc(100% - 30rem + 10px) !important;
     }
-    .right-column {
+    .right-column--theatre {
         width: 29.5rem!important;
     }
+    
+    /* chat */
     .tw-pd-x-1 {
         padding: 0!important;
     }
