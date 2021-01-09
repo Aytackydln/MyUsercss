@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Twitch Compact
 @namespace      github.com/openstyles/stylus
-@version        1.0.2
+@version        1.0.3
 @description    Twitch Compact
 @author         AytacKydln@github
 @homepageURL    https://github.com/Aytackydln/MyUsercss
@@ -20,7 +20,7 @@
     
     /* non-theatre */
     .channel-root__right-column { /* .right-column--theatre */
-        width: 29.5rem!important;
+        width: 30rem!important;
     }
     .persistent-player {
         max-width: calc(100% - 30rem + 10px) !important;
@@ -37,7 +37,7 @@
         width: calc(100% - 30rem + 10px) !important;
     }
     .right-column--theatre {
-        width: 29.5rem!important;
+        width: 30rem!important;
     }
     
     /* chat */
