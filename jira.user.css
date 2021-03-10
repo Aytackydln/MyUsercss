@@ -1,0 +1,136 @@
+/* ==UserStyle==
+@name           Compact Jira Board
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@author         Aytackydln@github
+@homepageURL    https://github.com/Aytackydln/MyUsercss
+@updateURL      https://aytackydln.github.io/MyUsercss/jira.user.css
+@preprocessor   less
+@var text jiraUrl "Jira Board URL" "http://jira/secure/RapidBoard.jspa"
+@var checkbox noMinHeight "Remove minimum card height" 1
+@var checkbox smallerDone "Smaller done cards" 1
+@var checkbox inlineHeader "Inline board header" 1
+@var checkbox compactFolders "Compact folders" 1
+@var checkbox compactHeaders "Compact headers" 1
+@var checkbox admin "I am a jira admin" 0
+==/UserStyle== */
+@-moz-document regexp('^https?://.*/RapidBoard.jspa.*') {
+
+    #ghx-header {
+        padding: 0;
+    }
+    #ghx-pool {
+        padding: 0;
+    }
+    .ghx-quick-content.aui-expander-content {
+        margin: 0;
+    }
+    .ghx-controls-filters dt,
+    .ghx-controls-filters dd {
+        margin: 0;
+    }
+    .ghx-controls-plan,
+    .ghx-header-compact .ghx-controls-report,
+    .ghx-controls-work {
+        min-height: 0;
+    }
+    .ghx-rapid-views #gh #ghx-work #ghx-pool-column {
+        overflow-x: scroll;
+        overflow-y: scroll;
+        margin: 0!important;
+    }
+    #ghx-pool-column::-webkit-scrollbar {
+        display: none;
+    }
+    /* tighter columns */
+    .ghx-rapid-views #gh #ghx-work #ghx-pool-column .ghx-columns,
+    .ghx-rapid-views #gh #ghx-work #ghx-pool-column #ghx-column-headers,
+    .ghx-rapid-views #gh #ghx-work #ghx-pool-column .ghx-zone-overlay-table {
+        grid-column-gap: 1px;
+    }
+
+    /* compact headers */
+    & when (@compactHeaders =1) {
+
+        .ghx-column-headers .ghx-column {
+            padding: 2px!important;
+        }
+        .ghx-rapid-views #gh #ghx-work #ghx-pool-column .ghx-swimlane .ghx-swimlane-header {
+            top: 30px;
+        }
+    }
+
+    /* compact folders */
+    & when (@compactFolders =1) { 
+        .ghx-heading {
+            margin: 0!important;
+        }
+    }
+
+    /* smaller cards */
+    & when (@noMinHeight =1) {
+        .ghx-issue .ghx-issue-content {
+            min-height: unset;
+        }
+    }
+
+    /* smaller done cards */
+    & when (@smallerDone =1) {
+        .ghx-column:nth-child(5) .ghx-issue {
+            padding-top: 1px;
+            padding-bottom: 1px;
+        }
+        .ghx-column:nth-child(5) .ghx-highlighted-fields {
+            display: none;
+            visibility: hidden;
+        }
+        .ghx-column:nth-child(5) .ghx-card-footer {
+            margin: 0;
+        }
+        .ghx-column:nth-child(5) .ghx-days {
+            /* Hide days past in done cards */
+            display: none;
+            visibility: hidden;
+        }
+    }
+
+    /* Hide verifiers of todo cards */
+    .ghx-column:nth-child(1) .ghx-extra-field.ghx-fa {
+        display: none;
+        visibility: hidden;
+    }
+
+    /* Highlight fixed issues with no verifier */
+    .ghx-column:nth-child(3) .ghx-extra-field.ghx-fa {
+        background: red;
+        color: black;
+        border: 1px red solid;
+        border-radius: 5px;
+        padding: 0 5px;
+    }
+
+    /* admin errors */
+    .ghx-exception-wrapper when (@admin =0) {
+        display: none;
+    }
+
+    /* inline board header */
+    & when (@inlineHeader =1) {
+        #ghx-view-selector > h1 {
+            display: inline-block;
+            margin: 0 10px 0 10px;
+        }
+        #ghx-board-name,
+        #ghx-sprint-goal {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 0!important;
+        }
+        span.subnav-container {
+            display: inline;
+        }
+        #ghx-view-selector #ghx-sprint-goal {
+            margin: 0;
+        }
+    }
+}
