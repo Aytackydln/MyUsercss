@@ -28,9 +28,6 @@
     .right-column.tw-relative .channel-root__right-column {
         transform: translateX(-30rem) translateZ(0px)!important;
     }
-    .channel-root__info.channel-root__info--with-chat{
-        margin-top: 784px!important;
-    }
     
     /* theatre */
     .persistent-player--theatre {
