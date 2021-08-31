@@ -42,6 +42,12 @@
     #ghx-pool-column::-webkit-scrollbar {
         display: none;
     }
+    .ghx-move-count {
+        visibility: hidden;
+        display: none;
+    }
+    
+    
     /* tighter columns */
     .ghx-rapid-views #gh #ghx-work #ghx-pool-column .ghx-columns,
     .ghx-rapid-views #gh #ghx-work #ghx-pool-column #ghx-column-headers,
