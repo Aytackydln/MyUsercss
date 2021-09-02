@@ -12,6 +12,7 @@
 @var checkbox inlineHeader "Inline board header" 1
 @var checkbox compactFolders "Compact folders" 1
 @var checkbox compactHeaders "Compact headers" 1
+@var checkbox hideScrollbar "Hide Scroll Bar" 1
 @var checkbox admin "I am a jira admin" 0
 ==/UserStyle== */
 @-moz-document regexp('^https?://.*/RapidBoard.jspa.*') {
@@ -38,9 +39,6 @@
         overflow-x: scroll;
         overflow-y: scroll;
         margin: 0!important;
-    }
-    #ghx-pool-column::-webkit-scrollbar {
-        display: none;
     }
     .ghx-move-count {
         visibility: hidden;
@@ -97,6 +95,13 @@
             /* Hide days past in done cards */
             display: none;
             visibility: hidden;
+        }
+    }
+    
+    /* hide scroll bar */
+    & when (hideScrollbar =1) {
+        #ghx-pool-column::-webkit-scrollbar {
+            display: none;
         }
     }
 
