@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Compact Jira Board
 @namespace      github.com/openstyles/stylus
-@version        1.1.0
+@version        1.2.0
 @author         Aytackydln@github
 @homepageURL    https://github.com/Aytackydln/MyUsercss
 @updateURL      https://aytackydln.github.io/MyUsercss/jira.user.css
@@ -12,7 +12,7 @@
 @var checkbox inlineHeader "Inline board header" 1
 @var checkbox compactFolders "Compact folders" 1
 @var checkbox compactHeaders "Compact headers" 1
-@var checkbox hideScrollbar "Hide Scroll Bar" 1
+@var checkbox hideScrollbar "Hide Scroll Bar" 0
 @var checkbox admin "I am a jira admin" 0
 ==/UserStyle== */
 @-moz-document regexp('^https?://.*/RapidBoard.jspa.*') {
