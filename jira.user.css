@@ -121,8 +121,14 @@
     }
 
     /* admin errors */
-    .ghx-exception-wrapper when (@admin =0) {
-        display: none;
+    & when (@admin =0) {
+        .ghx-exception-wrapper {
+            display: none;
+        }
+
+        .ghx-swimlane:last-of-type {
+            margin-bottom: 0;
+        }
     }
 
     /* inline board header */
