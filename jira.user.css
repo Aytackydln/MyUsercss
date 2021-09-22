@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Compact Jira Board
 @namespace      github.com/openstyles/stylus
-@version        1.3.0
+@version        1.4.0
 @author         Aytackydln@github
 @homepageURL    https://github.com/Aytackydln/MyUsercss
 @updateURL      https://aytackydln.github.io/MyUsercss/jira.user.css
@@ -95,6 +95,10 @@
             /* Hide days past in done cards */
             display: none;
             visibility: hidden;
+        }
+        .ghx-column:nth-child(5) .ghx-issue:not(:first-child) {
+            margin-top: -8px;
+            border-top: 0.5px gray solid;
         }
     }
     
