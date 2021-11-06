@@ -23,7 +23,7 @@
         width: 30rem!important;
     }
     .persistent-player {
-        max-width: calc(100% - 30rem + 10px) !important;
+        max-width: calc(100% - 30rem) !important;
     }
     .right-column.tw-relative .channel-root__right-column {
         transform: translateX(-30rem) translateZ(0px)!important;
