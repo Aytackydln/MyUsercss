@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Compact Jira Board
 @namespace      github.com/openstyles/stylus
-@version        1.4.0
+@version        1.4.1
 @author         Aytackydln@github
 @homepageURL    https://github.com/Aytackydln/MyUsercss
 @updateURL      https://aytackydln.github.io/MyUsercss/jira.user.css
@@ -36,7 +36,6 @@
         min-height: 0;
     }
     .ghx-rapid-views #gh #ghx-work #ghx-pool-column {
-        overflow-x: scroll;
         overflow-y: scroll;
         margin: 0!important;
     }
